@@ -16,6 +16,12 @@ class Solution {
             prev = prev.next;
         }
 
-        return head;
+        if(list1 == null) {
+            prev.next = list2;
+        } else if (list2 == null) {
+            prev.next = list1;
+        }
+
+        return prehead.next;
     }
 }
