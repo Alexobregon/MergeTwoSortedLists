@@ -5,7 +5,6 @@ class Solution {
         ListNode prev = prehead;
 
         while(list1 != null && list2 != null){
-           
             if(list1.val <= list2.val){
                 prev.next = list1;
                 list1 = list1.next;
@@ -21,7 +20,6 @@ class Solution {
         } else if (list2 == null) {
             prev.next = list1;
         }
-
         return prehead.next;
     }
 }
